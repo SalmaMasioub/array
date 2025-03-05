@@ -12,7 +12,10 @@ header{
    
     
 }
-
+.logo img{
+    width: 15vh;
+}
+   
 nav {
     display: flex;
     align-items: center;
@@ -55,6 +58,7 @@ nav ul li :nth-child(5) {
     display: none;
 }
 .first_section{
+    color: #323233;
     padding: 6vw;
     display: flex;
     flex-direction: column;
@@ -68,6 +72,9 @@ nav ul li :nth-child(5) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.first_section p{
+    color: #878790;
 }
 .grid{
     display: grid;
@@ -87,6 +94,48 @@ nav ul li :nth-child(5) {
     text-align: center;
     
 }
+.carte svg{
+    background-color: #87879017;
+    border-radius: 50%;
+    padding: 2vh;
+    color: #5329eb;
+}
+
+.third_section{
+    color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 5vh;
+padding: 6vh;
+background-color:#6d48e5 ;
+}
+.third_section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8vw;
+}
+
+.third_section a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.progress{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+.progress h1{
+    font-size: 7vh;
+}
+
+
+
 
 @media (max-width:440px) {
     .open{
@@ -119,5 +168,26 @@ nav ul li :nth-child(5) {
     #menu:checked + nav {
         left: 0;
     }
+.first_section :nth-child(1){
+    text-align: center;
     
+}
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10vw;
+        
+    }
+    .carte{
+        width: 40vw;
+    }
+   
+    .third_section {
+       
+        text-align: center;
+        
+    }
+     .container{
+flex-direction: column;
+
+     }
 }
